@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "modes.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: hsla(0, 100%, 100%);
+  --counter-color: hsl(240, 6%, 21%);
+  --cards-color: hsl(240, 9%, 89%);
+  --active-color: hsl(194, 97%, 31%);
+
+  font-size: 62.5%;
+  --ft-roboto: 'Roboto', sans-serif;
+  --ft-timer-size: clamp(6rem , 6rem + 10vw , 12.6rem);
+}
+
+body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+label{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: -100;
+}
+
+.mode-switch button {
+  position: absolute;
+  top: -6rem;
+  right: 6rem;
+
+  transition: top 500ms, transform 1s;
+}
+
+#sun {
+  transform: rotate(0deg) scale(0);
+}
+
+#moon {
+  transform: scale(0);
+}
+
+#sun.show {
+  top: 6rem;
+  transform: rotate(360deg) scale(1);
+}
+
+#moon.show {
+  top: 6rem;
+  transform: scale(1);
+}
+
+main {
+  margin: auto;
+  width: clamp(17rem , 17rem + 10vw , 36.2rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+  border-radius: 2.4rem;
+
+  cursor: pointer;
+}
+
+#timer button path,
+#timer .countdown {
+  color: var(--counter-color);
+  fill: var(--counter-color);
+
+  transition: fill 300ms, color 300ms;
+}
+
+#timer button.active path,
+#timer .active {
+  fill: var(--active-color);
+  color: var(--active-color);
+}
+
+.countdown {
+  display: flex;
+
+  font-family: var(--ft-roboto);
+  font-size: var(--ft-timer-size);
+  font-weight: 500;
+  line-height: 14.8rem;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.cards-sounds {
+  width: clamp(15rem , 15rem + 10vw , 30.8rem);
+  
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 3.2rem;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-areas: "A B" "C D";
+}
+
+.card{
+  position: relative;
+  display: grid;
+}
+
+.cards-sounds button {
+  padding: 2.4rem 4.7rem 6.8rem;
+  background-color: var(--cards-color);
+  transition: background-color 300ms;
+
+}
+
+.cards-sounds path {
+  fill: var(--counter-color);
+  transition: fill 300ms;
+}
+
+.cards-sounds .active,
+.cards-sounds .active path {
+  fill: #FFFFFF;
+  background-color: var(--active-color);
+}
+
+.cards-sounds button:nth-child(1) {
+  grid-area: A;
+}
+
+.cards-sounds button:nth-child(2) {
+  grid-area: B;
+}
+
+.cards-sounds button:nth-child(3) {
+  grid-area: C;
+}
+
+.cards-sounds button:nth-child(4) {
+  grid-area: D;
+}
+
+.volume{
+  -webkit-appearance: none;
+  appearance: none;
+  
+  width: 9rem;
+  height: 0.4rem;
+  background-color: var(--counter-color);
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 2.4rem;
+  justify-self: center;
+}
+
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  
+  width: 1.6rem;
+  height: 1.6rem;
+
+  background-color: var(--counter-color);
+  border-radius: 50%;
+}

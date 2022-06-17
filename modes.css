@@ -1,0 +1,16 @@
+body.dark { 
+  --body-bg: hsl(240, 5%, 7%);
+  --counter-color: hsl(240, 7%, 78%);
+  --cards-color: hsl(240, 6%, 17%);
+  --active-color: hsl(195, 74%, 15%);
+}
+
+body.dark #timer .active,
+body.dark .card-sounds .active path {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+body.dark .card-sounds path {
+  fill: var(--counter-color);
+}
