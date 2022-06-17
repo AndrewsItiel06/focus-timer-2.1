@@ -8,24 +8,20 @@ export function soundCards () {
   const flameBg = new Audio("https://github.com/AndrewsItiel06/focus-timer-2.0/blob/main/audios/Lareira.wav?raw=true");
 
   function volForest (attVal) {
-    forestBg.volume = attVal/100
-    console.log(forestBg.volume)
-  }
+    forestBg.volume = attVal/100;
+  };
 
   function volRaining (attVal) {
-    rainingBg.volume = attVal/100
-    console.log(rainingBg.volume)
-  }
+    rainingBg.volume = attVal/100;
+  };
 
   function volCity (attVal) {
-    cityBg.volume = attVal/100
-    console.log(cityBg.volume)
-  }
+    cityBg.volume = attVal/100;
+  };
 
   function volFlame (attVal) {
-    flameBg.volume = attVal/100
-    console.log(flameBg.volume)
-  }
+    flameBg.volume = attVal/100;
+  };
 
   return{
     forestBg,
