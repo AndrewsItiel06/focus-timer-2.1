@@ -179,3 +179,8 @@ button {
   background-color: var(--counter-color);
   border-radius: 50%;
 }
+
+.cards-sounds .active ~ .volume,
+.cards-sounds .active ~ .volume::-webkit-slider-thumb {
+  background-color: #FFFFFF;
+}
