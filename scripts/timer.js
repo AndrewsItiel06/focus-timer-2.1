@@ -35,7 +35,8 @@
     }
 
     function attMinutes(value){
-      return String(minutes += value).padStart(2 , "0");
+      If(minutes += value <= 0){minutes = 0} else {minutes += value}
+      String(minutes).padStart(2 , "0");
     }
 
     return {countdown , resetTimer , attMinutes}
