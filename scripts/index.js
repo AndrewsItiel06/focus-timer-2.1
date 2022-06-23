@@ -27,9 +27,10 @@ buttonAddition.addEventListener("click", () => {
 });
 
 buttonReduction.addEventListener("click", () => {
-  timerMinutes.textContent = timerOpt.attMinutes(-5)
+  timerMinutes.textContent = !isReducible ? timerOpt.attMinutes(-5) : "00";
   userMinutes = timerMinutes.textContent;
 });
+  
 
 soundButtonForest.addEventListener("click", () => {
   controlsOpt.forestCard()
