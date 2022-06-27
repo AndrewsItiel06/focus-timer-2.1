@@ -79,16 +79,16 @@ button {
 
 #timer button path,
 #timer .countdown {
-  color: var(--counter-color);
-  fill: var(--counter-color);
-
+  fill: var(--active-color);
+  color: var(--active-color);
+  
   transition: fill 300ms, color 300ms;
 }
 
 #timer button:disabled path,
 #timer .active {
-  fill: var(--active-color);
-  color: var(--active-color);
+  color: var(--counter-color);
+  fill: var(--counter-color);
 }
 
 .countdown {
