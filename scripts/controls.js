@@ -8,25 +8,18 @@
     buttonPlay.disabled = true;
     buttonAddition.disabled = true;
     buttonReduction.disabled = true;
-    
-    buttonPlay.classList.remove("active")
-    buttonStop.classList.add("active")
-    buttonAddition.classList.remove("active")
-    buttonReduction.classList.remove("active")
+    buttonStop.disabled = false;
+
     counter.classList.add("active")
   };
-
+  
   function atPressStop(){
     buttonPlay.disabled = false;
     buttonAddition.disabled = false;
     buttonReduction.disabled = false;
-
-    buttonPlay.classList.add("active")
-    buttonStop.classList.remove("active")
-    buttonAddition.classList.add("active")
-    buttonReduction.classList.add("active")
+    buttonStop.disabled = true;
+    
     counter.classList.remove("active")
-
   };
 
   function forestCard() {
