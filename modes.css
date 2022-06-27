@@ -6,6 +6,7 @@ body.dark {
 }
 
 body.dark #timer button:disabled,
+body.dark #timer .active,
 body.dark .card-sounds .active path {
   color: #FFFFFF;
   fill: #FFFFFF;
