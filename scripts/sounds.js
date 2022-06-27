@@ -6,6 +6,11 @@ export function soundCards () {
   const rainingBg = new Audio("./audios/Chuva.wav");
   const cityBg = new Audio("./audios/Cidade.wav");
   const flameBg = new Audio("./audios/Chama.wav");
+  
+  forestBg.loop = true;
+  rainingBg.loop = true;
+  cityBg.loop = true;
+  flameBg.loop = true;
 
   function volForest (attVal) {
     forestBg.volume = attVal/100;
