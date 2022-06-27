@@ -9,8 +9,8 @@
     buttonAddition.disabled = true;
     buttonReduction.disabled = true;
     buttonStop.disabled = false;
-
-    counter.classList.add("active")
+   
+    counter.classList.remove("active")
   };
   
   function atPressStop(){
@@ -18,8 +18,8 @@
     buttonAddition.disabled = false;
     buttonReduction.disabled = false;
     buttonStop.disabled = true;
-    
-    counter.classList.remove("active")
+
+   counter.classList.add("active") 
   };
 
   function forestCard() {
