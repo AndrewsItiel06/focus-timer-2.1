@@ -91,6 +91,11 @@ button {
   fill: var(--counter-color);
 }
 
+#timer{
+  display: grid;
+  justify-items: center;
+}
+
 .countdown {
   display: flex;
 
