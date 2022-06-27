@@ -9,10 +9,10 @@
     buttonAddition.disabled = true;
     buttonReduction.disabled = true;
     
-    buttonPlay.classList.add("active")
-    buttonStop.classList.remove("active")
-    buttonAddition.classList.add("active")
-    buttonReduction.classList.add("active")
+    buttonPlay.classList.remove("active")
+    buttonStop.classList.add("active")
+    buttonAddition.classList.remove("active")
+    buttonReduction.classList.remove("active")
     counter.classList.add("active")
   };
 
@@ -21,10 +21,10 @@
     buttonAddition.disabled = false;
     buttonReduction.disabled = false;
 
-    buttonPlay.classList.remove("active")
-    buttonStop.classList.add("active")
-    buttonAddition.classList.remove("active")
-    buttonReduction.classList.remove("active")
+    buttonPlay.classList.add("active")
+    buttonStop.classList.remove("active")
+    buttonAddition.classList.add("active")
+    buttonReduction.classList.add("active")
     counter.classList.remove("active")
 
   };
