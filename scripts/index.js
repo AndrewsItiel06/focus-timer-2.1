@@ -58,3 +58,5 @@ moonButton.addEventListener("click" , () => {
   lightAndDark.toggleModeButton();
   lightAndDark.toggleMode();
 });
+
+buttonStop.disabled = true;
