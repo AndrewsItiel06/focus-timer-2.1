@@ -85,7 +85,7 @@ button {
   transition: fill 300ms, color 300ms;
 }
 
-#timer button.active path,
+#timer button:disabled path,
 #timer .active {
   fill: var(--active-color);
   color: var(--active-color);
