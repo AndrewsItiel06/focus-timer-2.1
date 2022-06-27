@@ -68,8 +68,6 @@
         cards.flameBg.pause();
       };
   };
-
-
   
 volControlForest.addEventListener("change", () => {
   let attVal = volControlForest.value;
