@@ -5,9 +5,9 @@
 
  export function controls() {
   function atPressPlay(){
-    buttonPlay.setAttribute("disabled" , "disabled")
-    buttonAddition.setAttribute("disabled" , "disabled")
-    buttonReduction.setAttribute("disabled" , "disabled")
+    buttonPlay.disabled = true;
+    buttonAddition.disabled = true;
+    buttonReduction.disabled = true;
     
     buttonPlay.classList.add("active")
     buttonStop.classList.remove("active")
@@ -17,9 +17,9 @@
   };
 
   function atPressStop(){
-    buttonPlay.removeAttribute("disabled" , "disabled")
-    buttonAddition.removeAttribute("disabled" , "disabled")
-    buttonReduction.removeAttribute("disabled" , "disabled")
+    buttonPlay.disabled = false;
+    buttonAddition.disabled = false;
+    buttonReduction.disabled = false;
 
     buttonPlay.classList.remove("active")
     buttonStop.classList.add("active")
