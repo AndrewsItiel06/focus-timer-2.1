@@ -5,7 +5,7 @@ body.dark {
   --active-color: hsl(195, 74%, 15%);
 }
 
-body.dark #timer .active,
+body.dark #timer button:disabled,
 body.dark .card-sounds .active path {
   color: #FFFFFF;
   fill: #FFFFFF;
