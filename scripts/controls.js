@@ -10,7 +10,7 @@
     buttonReduction.disabled = true;
     buttonStop.disabled = false;
    
-    counter.classList.remove("active")
+    counter.classList.add("active"); 
   };
   
   function atPressStop(){
@@ -19,7 +19,7 @@
     buttonReduction.disabled = false;
     buttonStop.disabled = true;
 
-   counter.classList.add("active") 
+    counter.classList.remove("active");
   };
 
   function forestCard() {
