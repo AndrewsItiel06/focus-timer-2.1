@@ -1,25 +1,25 @@
-  import { userMinutes } from "./index.js"
+  // import { userMinutes } from "./index.js"
   import { controls } from "./controls.js"
   
   let controlsOpt = controls()
   
-  export function timer(timerMinutes , timerSeconds, minutes , ) {
+  export function timer(timerMinutes , timerSeconds, minutes) {
     let timeOut
+    let userMinutes = minutes;
 
     function countdown(){
     timeOut = setTimeout(() => {
-      minutes = Number(timerMinutes.textContent)
       let seconds = Number(timerSeconds.textContent)
-
-      if(minutes == "0" && seconds == "0" ){
+     
+      if(timerMinutes.textContent == "00" && seconds == "0" ){
         resetTimer()
         controlsOpt.atPressStop()
         return
       }
 
       if(seconds == "0"){
-        timerMinutes.textContent -= 1;
-        seconds= 60;
+        timerMinutes.textContent = String(--timerMinutes.textContent).padStart(2 , "0");
+        seconds= 2;
       }
 
       timerSeconds.textContent = String(--seconds).padStart(2 , "0")
@@ -35,7 +35,15 @@
     }
 
     function attMinutes(value){
-      return String(minutes += value).padStart(2 , "0");
+      minutes += value
+      if(Number(minutes) < 5) {
+        minutes = 0
+      }
+      console.log(minutes)
+
+      timerMinutes.textContent = String(minutes).padStart(2 , "0");
+
+      userMinutes = minutes
     }
      
 
