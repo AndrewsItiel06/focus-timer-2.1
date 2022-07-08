@@ -27,9 +27,12 @@ buttonAddition.addEventListener("click", () => {
 });
 
 buttonReduction.addEventListener("click", () => {
-  let isReducible =  (Number(userMinutes) - 5) < 0;
-  timerMinutes.textContent = !isReducible ? timerOpt.attMinutes(-5) : "00";
-  userMinutes = minutes;
+  if((Number(timerMinutes.textContent) <= 5){
+    timerMinutes.textContent = "00"
+  } else{
+    timerMinutes.textContent = !isReducible ? timerOpt.attMinutes(-5) : "00";
+    userMinutes = minutes;
+    }
 });
   
 
