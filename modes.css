@@ -2,11 +2,10 @@ body.dark {
   --body-bg: hsl(240, 5%, 7%);
   --counter-color: hsl(240, 7%, 78%);
   --cards-color: hsl(240, 6%, 17%);
-  --active-color: hsl(195, 74%, 15%);
+  --active-color: hsl(6, 61%, 45%);
 }
 
 body.dark #timer button:disabled,
-body.dark #timer .active,
 body.dark .card-sounds .active path {
   color: #FFFFFF;
   fill: #FFFFFF;
