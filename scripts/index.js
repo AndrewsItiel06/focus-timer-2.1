@@ -30,7 +30,7 @@ buttonReduction.addEventListener("click", () => {
   if((Number(timerMinutes.textContent) <= 5){
     timerMinutes.textContent = "00"
   } else{
-    timerMinutes.textContent = !isReducible ? timerOpt.attMinutes(-5) : "00";
+    timerMinutes.textContent = timerOpt.attMinutes(-5);
     userMinutes = minutes;
     }
 });
