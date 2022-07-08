@@ -2,10 +2,9 @@ import {timerMinutes , timerSeconds , buttonPlay , buttonStop , buttonAddition ,
 import {timer} from "./timer.js";
 import {controls} from "./controls.js";
 import {modeSwitch} from "./mode-switch.js";
-export {userMinutes};
+// export {userMinutes};
 
 let minutes =  Number(timerMinutes.textContent);
-let userMinutes = minutes;
 
 let timerOpt = timer(timerMinutes, timerSeconds, minutes,);
 let controlsOpt = controls();
@@ -22,17 +21,11 @@ buttonStop.addEventListener("click" , () => {
 });
 
 buttonAddition.addEventListener("click", () => {
-  timerMinutes.textContent = timerOpt.attMinutes(5);
-  userMinutes = minutes;
+  timerOpt.attMinutes(5);
 });
 
 buttonReduction.addEventListener("click", () => {
-  if(Number(timerMinutes.textContent) <= 5){
-    timerMinutes.textContent = "00"
-  } else{
-    timerMinutes.textContent = timerOpt.attMinutes(-5);
-    userMinutes = minutes;
-    }
+  timerOpt.attMinutes(-5);
 });
   
 
