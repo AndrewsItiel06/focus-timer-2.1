@@ -27,7 +27,7 @@ buttonAddition.addEventListener("click", () => {
 });
 
 buttonReduction.addEventListener("click", () => {
-  if((Number(timerMinutes.textContent) <= 5){
+  if(Number(timerMinutes.textContent) <= 5){
     timerMinutes.textContent = "00"
   } else{
     timerMinutes.textContent = timerOpt.attMinutes(-5);
