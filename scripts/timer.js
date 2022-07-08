@@ -19,7 +19,7 @@
 
       if(seconds == "0"){
         timerMinutes.textContent = String(--timerMinutes.textContent).padStart(2 , "0");
-        seconds= 2;
+        seconds= 60;
       }
 
       timerSeconds.textContent = String(--seconds).padStart(2 , "0")
