@@ -23,13 +23,13 @@ buttonStop.addEventListener("click" , () => {
 
 buttonAddition.addEventListener("click", () => {
   timerMinutes.textContent = timerOpt.attMinutes(5);
-  userMinutes = timerMinutes.textContent;
+  userMinutes = minutes;
 });
 
 buttonReduction.addEventListener("click", () => {
   let isReducible =  (Number(userMinutes) - 5) < 0;
   timerMinutes.textContent = !isReducible ? timerOpt.attMinutes(-5) : "00";
-  userMinutes = timerMinutes.textContent;
+  userMinutes = minutes;
 });
   
 
