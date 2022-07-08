@@ -18,7 +18,7 @@
       }
 
       if(seconds == "0"){
-        timerMinutes.textContent = attMinutes(-1);
+        timerMinutes.textContent -= 1;
         seconds= 60;
       }
 
