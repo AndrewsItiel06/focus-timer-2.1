@@ -62,22 +62,22 @@
       };
   };
   
-volControlForest.addEventListener("change", () => {
+volControlForest.addEventListener("input", () => {
   let attVal = volControlForest.value;
   cards.volForest(attVal)
 })
 
-volControlRaining.addEventListener("change", () => {
+volControlRaining.addEventListener("input", () => {
   let attVal = volControlRaining.value;
   cards.volRaining(attVal)
 })
 
-volControlCity.addEventListener("change", () => {
+volControlCity.addEventListener("input", () => {
   let attVal = volControlCity.value;
   cards.volCity(attVal)
 })
 
-volControlFlame.addEventListener("change", () => {
+volControlFlame.addEventListener("input", () => {
   let attVal = volControlFlame.value;
   cards.volFlame(attVal)
 })
