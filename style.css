@@ -114,8 +114,6 @@ button {
 }
 
 .cards-sounds {
-  width: clamp(15rem , 15rem + 10vw , 30.8rem);
-  
   display: grid;
   align-content: center;
   justify-items: center;
@@ -201,7 +199,6 @@ button {
 @media (max-width: 850px) {
   main{   
     flex-direction: column;
-    align-items: unset;
     gap: 2rem;
   }
 }
