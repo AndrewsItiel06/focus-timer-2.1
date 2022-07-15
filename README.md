@@ -16,9 +16,9 @@ In this project, i'm applying:
 
 ## Preview
   ### Mobile
-![image](https://user-images.githubusercontent.com/86017907/179307069-81c336cb-602a-4f7f-ada9-bae7dcd7fd24.png)
+![image](https://user-images.githubusercontent.com/86017907/179307069-81c336cb-602a-4f7f-ada9-bae7dcd7fd24.png)   
 
-  ### Mobile - Dark
+### Mobile - Dark
 ![image](https://user-images.githubusercontent.com/86017907/179307125-7691bdd1-138a-4a05-9606-66f68920b22c.png)
 
    ### Desktop
