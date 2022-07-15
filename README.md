@@ -6,9 +6,9 @@ A Pomodoro timer with optional background sounds.
 
 In this project, i'm applying:
 
-- Modulation
-- Dependecies Injection
+- Modules
 - Factory
+- Dependecy Injection
 
 ## Techs
 
